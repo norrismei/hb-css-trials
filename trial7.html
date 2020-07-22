@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div.background {
+            background-color: #555555;
+            width: 600px;
+            height: 130px;
+            margin: 10px
+        }
+
+        div.foreground {
+            display: inline-block;
+            background-color: #cccccc;
+            margin-top: 6px;
+            margin-left: 6px
+        }
+
+        div.top {
+            width: 192px;
+            height: 118px;
+        }
+
+        div.mid {
+            width: 142.5px;
+            vertical-align: top;
+        }
+
+        div.large {
+            height: 100px;
+        }
+
+        div.small {
+            height: 75px;
+        }
+
+        div.bottom {
+            width: 291px;
+            vertical-align: bottom;
+            margin-bottom: 6px;
+        }
+
+        #bottom_left {
+            height: 35px;
+        }
+
+        #bottom_right {
+            height: 118px;
+        }
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="background">
+        <div class="foreground top"></div><!-- Get rid of inline space 
+     --><div class="foreground top"></div><!-- Get rid of inline space 
+     --><div class="foreground top"></div>
+    </div>
+
+    <div class="background">
+        <div class="foreground mid large"></div><!-- Get rid of inline space 
+     --><div class="foreground mid small"></div><!-- Get rid of inline space 
+     --><div class="foreground mid large"></div><!-- Get rid of inline space 
+     --><div class="foreground mid small"></div>
+    </div>
+
+    <div class="background">
+        <div class="foreground bottom" id="bottom_left"></div><!-- Get rid of inline space 
+     --><div class="foreground bottom" id="bottom_right"></div>
+    </div>
+  </body>
+
+</html>
